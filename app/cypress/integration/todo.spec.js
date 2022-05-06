@@ -8,6 +8,7 @@ describe('index', () => {
 
     // 4.2
     it('should ', () => {
+        //--
         cy.dataCy('type-task').type('1').should('have.value', "1");  
         cy.dataCy('add-task').click();
         cy.dataCy('todo-content-0').should('have.text',1);
